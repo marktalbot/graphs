@@ -44,7 +44,6 @@ var horizonalLinePlugin = {
 };
 Chart.pluginService.register(horizonalLinePlugin);
 
-
 let ctx = document.getElementById("team1");
 let buyin = [6,10,9,12,14,15,17,22,26,35,39,42,44,44,46];
 
@@ -99,4 +98,19 @@ let btnRewind = document.getElementById('js-rewind');
 btnRewind.addEventListener('click', () => {
 	buyin.pop();
 	chart.update();
+});
+
+let btnRewindAll = document.getElementById('js-rewind-all');
+btnRewindAll.addEventListener('click', () => {
+	buyin.pop();
+	chart.update();
+	
+	let intervalId = setInterval(() => {
+		if (buyin.length > 0) {
+			buyin.pop();
+			chart.update();
+		} else {
+			clearInterval(intervalId);
+		};
+	}, 1000);
 });
