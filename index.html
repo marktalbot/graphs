@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Charts</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		body {padding: 20px;}
+		.btn-default {
+			background-color: #f0f0f0;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="team1" width="500" height="100"></canvas>
+	<div class="clearfix">
+		<div class="pull-right">
+			<button class="btn btn-xs btn-default" id="js-add-move">Add Move (+5 pts)</button>
+			<button class="btn btn-xs btn-default" id="js-rewind">Rewind</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="media">
+					<div class="media-left">
+						<img class="media-object img-circle" src="http://placehold.it/100x100&text=profile" alt="">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis alias non facere, aliquid fugit esse deserunt inventore ipsam enim vel?</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h4>Why</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vel minima totam alias eius, temporibus error soluta modi quae quos!</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
